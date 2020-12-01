@@ -3,16 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F3751B225676A1F00678142 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 1F3751B125676A1F00678142 /* Algorithms */; };
 		1F76DC3B256101BE00BE620C /* 2019_02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F76DC3A256101BE00BE620C /* 2019_02.swift */; };
 		1F76DC40256103D300BE620C /* Puzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F76DC3F256103D300BE620C /* Puzzle.swift */; };
 		1F76DC43256106AF00BE620C /* IntCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F76DC42256106AF00BE620C /* IntCode.swift */; };
+		1F9E47E52576633D00042763 /* 2020_01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E47E42576633D00042763 /* 2020_01.swift */; };
+		1F9E47EA257663C200042763 /* 2020_x_templatee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E47E9257663C200042763 /* 2020_x_templatee.swift */; };
+		1FB06301256B274D004B2526 /* AoC_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB06300256B274D004B2526 /* AoC_Tests.swift */; };
+		1FB06309256B2879004B2526 /* AoC Extentions Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB06308256B2879004B2526 /* AoC Extentions Tests.swift */; };
+		1FB06314256B4DFF004B2526 /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1FB06313256B4DFF004B2526 /* SwifterSwift */; };
+		1FB0631B256B5E87004B2526 /* SwiftGraph in Frameworks */ = {isa = PBXBuildFile; productRef = 1FB0631A256B5E87004B2526 /* SwiftGraph */; };
 		1FCA7AE42560E2E80075F836 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA7AE32560E2E80075F836 /* main.swift */; };
 		1FCA7AF42560E43B0075F836 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA7AF32560E43B0075F836 /* Input.swift */; };
 		1FCA7AFD2560E61C0075F836 /* 2019_01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA7AFC2560E61C0075F836 /* 2019_01.swift */; };
+		1FF8DB402565F74F00783A7E /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF8DB3F2565F74F00783A7E /* Tree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,21 +37,37 @@
 
 /* Begin PBXFileReference section */
 		1F76DC3A256101BE00BE620C /* 2019_02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2019_02.swift; sourceTree = "<group>"; };
-		1F76DC3D256101D400BE620C /* 2019_02_instructions.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = 2019_02_instructions.md; sourceTree = "<group>"; };
 		1F76DC3F256103D300BE620C /* Puzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle.swift; sourceTree = "<group>"; };
 		1F76DC42256106AF00BE620C /* IntCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntCode.swift; sourceTree = "<group>"; };
+		1F9E47E42576633D00042763 /* 2020_01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2020_01.swift; sourceTree = "<group>"; };
+		1F9E47E9257663C200042763 /* 2020_x_templatee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2020_x_templatee.swift; sourceTree = "<group>"; };
+		1FB062FE256B274D004B2526 /* AoC Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AoC Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FB06300256B274D004B2526 /* AoC_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AoC_Tests.swift; sourceTree = "<group>"; };
+		1FB06302256B274E004B2526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FB06308256B2879004B2526 /* AoC Extentions Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AoC Extentions Tests.swift"; sourceTree = "<group>"; };
 		1FCA7AE02560E2E80075F836 /* AoC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AoC; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCA7AE32560E2E80075F836 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1FCA7AF32560E43B0075F836 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
 		1FCA7AFC2560E61C0075F836 /* 2019_01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2019_01.swift; sourceTree = "<group>"; };
-		1FCA7B042560E6D00075F836 /* 2019_01_instructions.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = 2019_01_instructions.md; sourceTree = "<group>"; };
+		1FF8DB3E2565DD8000783A7E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1FF8DB3F2565F74F00783A7E /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1FB062FB256B274D004B2526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FCA7ADD2560E2E80075F836 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F3751B225676A1F00678142 /* Algorithms in Frameworks */,
+				1FB06314256B4DFF004B2526 /* SwifterSwift in Frameworks */,
+				1FB0631B256B5E87004B2526 /* SwiftGraph in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,15 +78,33 @@
 			isa = PBXGroup;
 			children = (
 				1F76DC3A256101BE00BE620C /* 2019_02.swift */,
-				1F76DC3D256101D400BE620C /* 2019_02_instructions.md */,
 			);
 			path = Day2;
+			sourceTree = "<group>";
+		};
+		1F9E47E32576631900042763 /* Day 1 */ = {
+			isa = PBXGroup;
+			children = (
+				1F9E47E42576633D00042763 /* 2020_01.swift */,
+			);
+			path = "Day 1";
+			sourceTree = "<group>";
+		};
+		1FB062FF256B274D004B2526 /* AoC Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1FB06300256B274D004B2526 /* AoC_Tests.swift */,
+				1FB06302256B274E004B2526 /* Info.plist */,
+				1FB06308256B2879004B2526 /* AoC Extentions Tests.swift */,
+			);
+			path = "AoC Tests";
 			sourceTree = "<group>";
 		};
 		1FCA7AD72560E2E80075F836 = {
 			isa = PBXGroup;
 			children = (
 				1FCA7AE22560E2E80075F836 /* AoC */,
+				1FB062FF256B274D004B2526 /* AoC Tests */,
 				1FCA7AE12560E2E80075F836 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				1FCA7AE02560E2E80075F836 /* AoC */,
+				1FB062FE256B274D004B2526 /* AoC Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +124,7 @@
 				1FCA7AEC2560E3960075F836 /* Components */,
 				1FCA7AEB2560E3880075F836 /* Puzzles */,
 				1FCA7AE32560E2E80075F836 /* main.swift */,
+				1FF8DB3E2565DD8000783A7E /* README.md */,
 			);
 			path = AoC;
 			sourceTree = "<group>";
@@ -126,6 +170,7 @@
 		1FCA7AEF2560E3C80075F836 /* Structures */ = {
 			isa = PBXGroup;
 			children = (
+				1FF8DB3F2565F74F00783A7E /* Tree.swift */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
@@ -164,6 +209,8 @@
 		1FCA7AFB2560E5F40075F836 /* 2020 */ = {
 			isa = PBXGroup;
 			children = (
+				1F9E47E32576631900042763 /* Day 1 */,
+				1F9E47E9257663C200042763 /* 2020_x_templatee.swift */,
 			);
 			path = 2020;
 			sourceTree = "<group>";
@@ -172,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				1FCA7AFC2560E61C0075F836 /* 2019_01.swift */,
-				1FCA7B042560E6D00075F836 /* 2019_01_instructions.md */,
 			);
 			path = Day1;
 			sourceTree = "<group>";
@@ -180,6 +226,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1FB062FD256B274D004B2526 /* AoC Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FB06303256B274E004B2526 /* Build configuration list for PBXNativeTarget "AoC Tests" */;
+			buildPhases = (
+				1FB062FA256B274D004B2526 /* Sources */,
+				1FB062FB256B274D004B2526 /* Frameworks */,
+				1FB062FC256B274D004B2526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AoC Tests";
+			productName = "AoC Tests";
+			productReference = 1FB062FE256B274D004B2526 /* AoC Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		1FCA7ADF2560E2E80075F836 /* AoC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FCA7AE72560E2E80075F836 /* Build configuration list for PBXNativeTarget "AoC" */;
@@ -193,6 +256,11 @@
 			dependencies = (
 			);
 			name = AoC;
+			packageProductDependencies = (
+				1F3751B125676A1F00678142 /* Algorithms */,
+				1FB06313256B4DFF004B2526 /* SwifterSwift */,
+				1FB0631A256B5E87004B2526 /* SwiftGraph */,
+			);
 			productName = AoC;
 			productReference = 1FCA7AE02560E2E80075F836 /* AoC */;
 			productType = "com.apple.product-type.tool";
@@ -206,6 +274,9 @@
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
+					1FB062FD256B274D004B2526 = {
+						CreatedOnToolsVersion = 12.2;
+					};
 					1FCA7ADF2560E2E80075F836 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -220,32 +291,96 @@
 				Base,
 			);
 			mainGroup = 1FCA7AD72560E2E80075F836;
+			packageReferences = (
+				1F3751B025676A1F00678142 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				1FB06312256B4DFF004B2526 /* XCRemoteSwiftPackageReference "SwifterSwift" */,
+				1FB06319256B5E87004B2526 /* XCRemoteSwiftPackageReference "SwiftGraph" */,
+			);
 			productRefGroup = 1FCA7AE12560E2E80075F836 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1FCA7ADF2560E2E80075F836 /* AoC */,
+				1FB062FD256B274D004B2526 /* AoC Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		1FB062FC256B274D004B2526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		1FB062FA256B274D004B2526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FB06309256B2879004B2526 /* AoC Extentions Tests.swift in Sources */,
+				1FB06301256B274D004B2526 /* AoC_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FCA7ADC2560E2E80075F836 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FF8DB402565F74F00783A7E /* Tree.swift in Sources */,
 				1F76DC43256106AF00BE620C /* IntCode.swift in Sources */,
 				1F76DC40256103D300BE620C /* Puzzle.swift in Sources */,
 				1FCA7AFD2560E61C0075F836 /* 2019_01.swift in Sources */,
+				1F9E47E52576633D00042763 /* 2020_01.swift in Sources */,
 				1F76DC3B256101BE00BE620C /* 2019_02.swift in Sources */,
 				1FCA7AF42560E43B0075F836 /* Input.swift in Sources */,
 				1FCA7AE42560E2E80075F836 /* main.swift in Sources */,
+				1F9E47EA257663C200042763 /* 2020_x_templatee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		1FB06304256B274E004B2526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DL6CYE94VA;
+				INFOPLIST_FILE = "AoC Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "joshua.gohlke.AoC-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1FB06305256B274E004B2526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DL6CYE94VA;
+				INFOPLIST_FILE = "AoC Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "joshua.gohlke.AoC-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		1FCA7AE52560E2E80075F836 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -386,6 +521,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1FB06303256B274E004B2526 /* Build configuration list for PBXNativeTarget "AoC Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FB06304256B274E004B2526 /* Debug */,
+				1FB06305256B274E004B2526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1FCA7ADB2560E2E80075F836 /* Build configuration list for PBXProject "AoC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -405,6 +549,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1F3751B025676A1F00678142 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
+		1FB06312256B4DFF004B2526 /* XCRemoteSwiftPackageReference "SwifterSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwifterSwift/SwifterSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+		1FB06319256B5E87004B2526 /* XCRemoteSwiftPackageReference "SwiftGraph" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/davecom/SwiftGraph";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F3751B125676A1F00678142 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F3751B025676A1F00678142 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		1FB06313256B4DFF004B2526 /* SwifterSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1FB06312256B4DFF004B2526 /* XCRemoteSwiftPackageReference "SwifterSwift" */;
+			productName = SwifterSwift;
+		};
+		1FB0631A256B5E87004B2526 /* SwiftGraph */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1FB06319256B5E87004B2526 /* XCRemoteSwiftPackageReference "SwiftGraph" */;
+			productName = SwiftGraph;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1FCA7AD82560E2E80075F836 /* Project object */;
 }

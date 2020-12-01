@@ -18,7 +18,7 @@ struct IntcodeComputer {
     mutating func exec() throws {
         var opcode = memory[pointer]
         
-        while opcode != 99 {
+        while opcode != 99 {  // Halts execution
             switch opcode {
             case 1: // Adds in1 and in2 and stores value in out1
                 let in1 = memory[pointer + 1]
@@ -26,7 +26,7 @@ struct IntcodeComputer {
                 let out1 = memory[pointer + 3]
                 memory[out1] = memory[in1] + memory[in2]
                 pointer += 4
-            case 2: // Adds in1 and in2 and stores value in out1
+            case 2: // Multiplies in1 and in2 and stores value in out1
                 let in1 = memory[pointer + 1]
                 let in2 = memory[pointer + 2]
                 let out1 = memory[pointer + 3]
