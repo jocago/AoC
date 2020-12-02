@@ -13,7 +13,10 @@ protocol Input {
 
 extension Input {
     func parseToIntArray(splitBy: Character = "\n") -> [Int] {
-        return raw.split(separator: splitBy).map {Int($0)!}
+        return raw.split(separator: splitBy).map { Int($0)! }
+    }
+    func parseToStringArray(splitBy: Character = "\n") -> [String] {
+        return raw.split(separator: splitBy).map { String($0) }
     }
 }
 

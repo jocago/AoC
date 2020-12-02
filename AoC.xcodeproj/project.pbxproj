@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F3751B225676A1F00678142 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 1F3751B125676A1F00678142 /* Algorithms */; };
+		1F417D1F257757E50052B1E5 /* 2020_02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F417D1E257757E50052B1E5 /* 2020_02.swift */; };
 		1F76DC3B256101BE00BE620C /* 2019_02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F76DC3A256101BE00BE620C /* 2019_02.swift */; };
 		1F76DC40256103D300BE620C /* Puzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F76DC3F256103D300BE620C /* Puzzle.swift */; };
 		1F76DC43256106AF00BE620C /* IntCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F76DC42256106AF00BE620C /* IntCode.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F417D1E257757E50052B1E5 /* 2020_02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2020_02.swift; sourceTree = "<group>"; };
 		1F76DC3A256101BE00BE620C /* 2019_02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2019_02.swift; sourceTree = "<group>"; };
 		1F76DC3F256103D300BE620C /* Puzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle.swift; sourceTree = "<group>"; };
 		1F76DC42256106AF00BE620C /* IntCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntCode.swift; sourceTree = "<group>"; };
@@ -80,14 +82,6 @@
 				1F76DC3A256101BE00BE620C /* 2019_02.swift */,
 			);
 			path = Day2;
-			sourceTree = "<group>";
-		};
-		1F9E47E32576631900042763 /* Day 1 */ = {
-			isa = PBXGroup;
-			children = (
-				1F9E47E42576633D00042763 /* 2020_01.swift */,
-			);
-			path = "Day 1";
 			sourceTree = "<group>";
 		};
 		1FB062FF256B274D004B2526 /* AoC Tests */ = {
@@ -209,8 +203,9 @@
 		1FCA7AFB2560E5F40075F836 /* 2020 */ = {
 			isa = PBXGroup;
 			children = (
-				1F9E47E32576631900042763 /* Day 1 */,
 				1F9E47E9257663C200042763 /* 2020_x_templatee.swift */,
+				1F9E47E42576633D00042763 /* 2020_01.swift */,
+				1F417D1E257757E50052B1E5 /* 2020_02.swift */,
 			);
 			path = 2020;
 			sourceTree = "<group>";
@@ -333,6 +328,7 @@
 				1FF8DB402565F74F00783A7E /* Tree.swift in Sources */,
 				1F76DC43256106AF00BE620C /* IntCode.swift in Sources */,
 				1F76DC40256103D300BE620C /* Puzzle.swift in Sources */,
+				1F417D1F257757E50052B1E5 /* 2020_02.swift in Sources */,
 				1FCA7AFD2560E61C0075F836 /* 2019_01.swift in Sources */,
 				1F9E47E52576633D00042763 /* 2020_01.swift in Sources */,
 				1F76DC3B256101BE00BE620C /* 2019_02.swift in Sources */,
