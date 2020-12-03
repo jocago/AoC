@@ -46,11 +46,7 @@ struct p2020_3: Puzzle {
             [1,7],
             [2,1]
         ]
-        var ans: [Int] = []
-        for p in patterns {
-            ans.append(getTreesHit(pattern: p))
-        }
-        return ans.reduce(1, *)
+        return patterns.map { getTreesHit(pattern: $0) }.reduce(1, *)
     }
 }
 
