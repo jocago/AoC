@@ -3,25 +3,13 @@ import Foundation
 
 struct p2020_x: Puzzle {
     var data = testInput.parseToIntArray()
-    var verbose = false
     var runPart = 0
-    
-    func run() {
-        switch runPart {
-        case 1:
-            print(part1())
-        case 2:
-            print(part2())
-        default:
-            print("Puzzle not configured")
-        }
-    }
 
-    func part1() -> Int {
+    func part1() -> Any {
         return 0
     }
 
-    func part2() -> Int {
+    func part2() -> Any {
         return 0
     }
 }

@@ -1,70 +1,12 @@
 //
-//  2020_02.swift
+//  Input.swift
 //  AoC
 //
 //  Created by Joshua Gohlke on 12/2/20.
 //
 
-import Foundation
-import SwifterSwift
 
-struct p2020_2: Puzzle {
-    var data: [String] = input.parseToStringArray()
-    var verbose = false
-    var runPart = 2
-    
-    func run() {
-        switch runPart {
-        case 1:
-            print(part1())
-        case 2:
-            print(part2())
-        default:
-            print("Puzzle not configured")
-        }
-    }
-
-    func part1() -> Int {
-        var passThatPasses = 0
-        for row in data {
-            let r = row.split(separator: " ")
-            guard r.count == 3 else { return -1 } // -1 error - not splitting into 3 parts
-            let range: [Int] = r[0].split(separator: "-").map { Int($0)! }
-            let char: Character = Character(String(r[1].first!))
-            let pw: String = String(r[2])
-            
-            let pwCharCount = pw.filter { $0 == char }.count
-            if pwCharCount >= range[0] && pwCharCount <= range[1] { passThatPasses += 1 }
-            
-        }
-        return passThatPasses
-    }
-
-    func part2() -> Int {
-        var passThatPasses = 0
-        for row in data {
-            let r = row.split(separator: " ")
-            guard r.count == 3 else { return -1 } // -1 error - not splitting into 3 parts
-            let range: [Int] = r[0].split(separator: "-").map { Int($0)! }
-            let char: Character = Character(String(r[1].first!))
-            let pw: [Character] = String(r[2]).charactersArray
-            
-            let chA = pw[range[0] - 1]
-            let chB = pw[range[1] - 1]
-            if chA != chB && ( chA == char || chB == char) { passThatPasses += 1 }
-        }
-        return passThatPasses
-    }
-}
-
-
-fileprivate let testInput = Data(raw: """
-1-3 a: abcde
-1-3 b: cdefg
-2-9 c: ccccccccc
-""")
-
-fileprivate let input = Data(raw: """
+let input_2020_02 = Data(raw: """
 1-14 b: bbbbbbbbbbbbbbbbbbb
 3-14 v: vvpvvvmvvvvvvvv
 2-5 m: mfvxmmm

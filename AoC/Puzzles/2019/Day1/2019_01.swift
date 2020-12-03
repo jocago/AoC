@@ -8,13 +8,10 @@
 import Foundation
 
 struct p2019_01: Puzzle {
+    var runPart = 2
     var data = input.parseToIntArray()
     var verbose = false
     
-    func run() {
-        print(part1())
-        print(part2())
-    }
     
     mutating func replaceData(with data: [Int]) {
         self.data = data
@@ -24,7 +21,7 @@ struct p2019_01: Puzzle {
         return mass / 3 - 2
     }
     
-    func part1() -> Int {
+    func part1() -> Any {
         var runningTotalFuel = 0
         for mass in data {
             runningTotalFuel += calculateFuel(forMass: mass)
@@ -32,7 +29,7 @@ struct p2019_01: Puzzle {
         return runningTotalFuel
     }
     
-    func part2() -> Int {
+    func part2() -> Any {
         var runningTotalFuel: Int = 0 {
             didSet {
                 if verbose {
