@@ -117,6 +117,7 @@
 		1FCA7AD72560E2E80075F836 = {
 			isa = PBXGroup;
 			children = (
+				1FF8DB3E2565DD8000783A7E /* README.md */,
 				1FCA7AE22560E2E80075F836 /* AoC */,
 				1FCA7AE12560E2E80075F836 /* Products */,
 			);
@@ -137,7 +138,6 @@
 				1FCA7AEC2560E3960075F836 /* Components */,
 				1FCA7AEB2560E3880075F836 /* Puzzles */,
 				1FCA7AE32560E2E80075F836 /* main.swift */,
-				1FF8DB3E2565DD8000783A7E /* README.md */,
 			);
 			path = AoC;
 			sourceTree = "<group>";

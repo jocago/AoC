@@ -25,13 +25,13 @@ These are packages linked to the project which may be useful for problem solving
 
 ### Swift Algorithms
 
-While I have not used this package in the project yet, it may proove helpful.
+While I have not used this package in the project yet, it may prove helpful.
 
 https://github.com/apple/swift-algorithms
 
 ### Swift Numerics
 
-While I have not used this package in the project yet, it may proove helpful.
+While I have not used this package in the project yet, it may prove helpful.
 
 https://github.com/apple/swift-numerics
 
@@ -45,7 +45,7 @@ https://github.com/SwifterSwift/SwifterSwift
 
 ### SwiftGraph
 
-While I have not used this package in the project yet, it may proove helpful.
+While I have not used this package in the project yet, it may prove helpful.
 
 https://davecom.github.io/SwiftGraph
 
