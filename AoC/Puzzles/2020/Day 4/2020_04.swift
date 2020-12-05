@@ -19,7 +19,7 @@ import SwifterSwift
 
 struct Passport {
     // settings
-    var verbose = true
+    var verbose = false
     
     // base fields
     var byr: Int? // (Birth Year) - four digits; at least 1920 and at most 2002.
