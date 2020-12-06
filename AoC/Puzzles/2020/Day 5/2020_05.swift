@@ -11,7 +11,7 @@ import SwifterSwift
 /*
  Wow this one is ugly. Not the problem. It's a fun one.
  But I think I went through the most basic trail and error way to find the solution possible.
- I will probably come back and clean this up a bit when I'm not so tired. 
+ I will probably come back and clean this up a bit when I'm not so tired.
  */
 
 struct p2020_5: Puzzle {
