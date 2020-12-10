@@ -8,7 +8,7 @@
 import Foundation
 
 protocol Input {
-    var raw: String { get set }
+    var raw: String { get }
 }
 
 extension Input {
