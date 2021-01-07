@@ -39,7 +39,7 @@ Oh. To get pt 2, you have to have completed the other 48 stars. Guess that'll ha
 
 Yup, I'm skipping around, now. Picking off the easier ones. And pt 1 is pretty easy. I mean, who has not written a version of a card game as practice? 
 
-It took me a little while to code but that's mainly because it's christmas day and family stuff takes priority. I also broke out each subcomponent because I expect one part to change in pt2 that I may be able to just quickly replace and move one. 
+It took me a little while to code but that's mainly because it's Christmas day and family stuff takes priority. I also broke out each subcomponent because I expect one part to change in pt2 that I may be able to just quickly replace and move one. 
 
 Pt 2 pretty much redefines how the whole game works. My modularized bits all remain intact, so there's that. But the body of pt 1 need to be extracted and rewritten to allow recursion. Not too tough, but more that I was hoping for. 
 
@@ -63,6 +63,34 @@ After a turn is resolved and both players survive, both players can draw cards f
 When a player runs out of cards in their hand and a reserve skirmish does not save them (in the case of losing a battle), they lose the war irrespective of how many cards are in their deck. 
 
 
+### Day 19
+
+Going back to the big guys. Day 19 and 20. 
+
+So I can see why everyone grumbled about this one. My first instinct is to derive a series of strings built as all possible values and then compare my strings to that. Something tells me, though, that I'll regret that in pt 2. In reading some discussions, it looks like enums are a popular solution among Swift devs for this problem and I think it's time I learned more about the advance usage of them. I know they're powerful in Swift but have not had a reason to dig deeper than what's in every other language. 
+
+Ok so enums are awesome in Swift. It's kind of a mix of a struct but with a built-in status and, well, enumeration. I may start overusing that.
+
+
+## 2020.12.28
+
+### Day 20
+
+This one looks fun. For some reason I enjoy the puzzles where I can make an object to manipulate. Maybe it's more strait-forward. Anyway, I've heard grumblings about this day so I can assume it will not be as easy to solve as it seems or maybe pt 2 throws a massive wrench into the cogs I build in pt 1. We'll see.
+
+I feel like I went overboard with this one. Building out each interaction in a class works and is probably easier to maintain, but it takes a lot longer to code. 
+
+## 2021.01.06
+
+I have not worked on day 20 in a few days. Busy. But it's pretty tough. I have several non-working versions, but it's time to move on for a bit. I'll come back to it. 
+
+### Day 21
+
+Let's look at 21. It's a mutual exclusion list. I like it. So my first thought is to take each of the allergen and create instances of the ingredients. There should be at least one ingredient that each instance contains. From there, each instance of that ingredient that is not associated with that allergen needs to be. Then in the next allergen, don't review ingredients that have already been identified.  
+
+Done.
+
+As a bonus, pt 2 becomes really easy because i already matched the kv pairs of allergens to ingredients. 
 
 
 

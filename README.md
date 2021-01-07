@@ -4,6 +4,8 @@ A multi-year code base for completing AoC challenges. This started in 2020.
 
 The main.swift file is the entry point into the command line project and basically points to the current puzzle and runs it. 
 
+I've also started journaling. /AoC/Blog/README.md
+
 ## Internal components
 
 ### Base
@@ -23,31 +25,15 @@ New data structures needed to complete challenges.
 
 These are packages linked to the project which may be useful for problem solving. 
 
-### Swift Algorithms
 
-While I have not used this package in the project yet, it may prove helpful.
-
-https://github.com/apple/swift-algorithms
-
-### Swift Numerics
-
-While I have not used this package in the project yet, it may prove helpful.
-
-https://github.com/apple/swift-numerics
 
 ### SwifterSwift
 
-I've used the following components
-
-- StringExtensions -> charactersArray
+I've found this to be really helpful. Especially for string and array parsing. 
 
 https://github.com/SwifterSwift/SwifterSwift
 
-### SwiftGraph
 
-While I have not used this package in the project yet, it may prove helpful.
-
-https://davecom.github.io/SwiftGraph
 
 ## Other sources
 

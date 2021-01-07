@@ -64,6 +64,14 @@ extension Input {
         let dataArr = dataT.split(separator: splitBy)
         return dataArr.map { String($0) }
     }
+    
+    func parseToBlocksArray() -> [String] {
+        return raw.components(separatedBy: "\n\n").map { String($0) }
+    }
+    
+    func parseToBlockOfStringsArray() -> [[String]] {
+        return raw.components(separatedBy: "\n\n").map { String($0) }.map { $0.components(separatedBy: "\n") }
+    }
 }
 
 struct Data: Input {
