@@ -72,6 +72,10 @@ extension Input {
     func parseToBlockOfStringsArray() -> [[String]] {
         return raw.components(separatedBy: "\n\n").map { String($0) }.map { $0.components(separatedBy: "\n") }
     }
+    
+    func parseToSimpleCharArray() -> [Character] {
+        return raw.charactersArray
+    }
 }
 
 struct Data: Input {

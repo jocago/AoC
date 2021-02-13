@@ -1,7 +1,7 @@
 
 import Foundation
 
-struct p2020_x: Puzzle {
+struct p2015_x: Puzzle {
     var data = testInput.parseToIntArray()
     var runPart = 0
 
@@ -19,6 +19,6 @@ fileprivate let testInput = Data(raw: """
 
 """)
 
-fileprivate let input = Data(raw: """
-
+let input_20yy_dd = Data(raw: """
+        
 """)
