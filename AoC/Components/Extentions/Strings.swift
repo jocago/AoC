@@ -23,4 +23,11 @@ extension String {
         let computed = Insecure.MD5.hash(data: self.data(using: .utf8)!)
         return computed.map { String(format: "%02hhx", $0) }.joined()
     }
+    
+    func getSubString(start: Int, stop: Int) -> String {
+        var str = self
+        str.removeLast(str.count - stop)
+        str.removeFirst(start - 1)
+        return str
+    }
 }

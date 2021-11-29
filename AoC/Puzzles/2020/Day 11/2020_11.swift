@@ -28,9 +28,9 @@ struct p2020_11: Puzzle {
     
     class Cell {
         var type: CellType
-        private var __state: CellState = .vacant
-        private var __preFrameState: CellState = .vacant
-        private var __neighbors: [Cell] = []
+        private var state: CellState = .vacant
+        private var preFrameState: CellState = .vacant
+        private var neighbors: [Cell] = []
         var x: Int
         var y: Int
         var complexRules: Bool
@@ -42,47 +42,47 @@ struct p2020_11: Puzzle {
             self.complexRules = complex
         }
         
-        func getState() -> CellState { return __preFrameState }
+        func getState() -> CellState { return preFrameState }
         
         func add(neighbor: Cell) {
-            if neighbor.type == .chair { __neighbors.append(neighbor) } // floor will always be vacant
+            if neighbor.type == .chair { neighbors.append(neighbor) } // floor will always be vacant
         }
         
         func runFrame() -> (CellState, Bool) { // did state change?
             // 1. If is empty and no occupied seats adjacent, becomes occupied
-            if __state == .vacant {
+            if state == .vacant {
                 var emptyArea = true
-                for i in 0..<__neighbors.count {
-                    if __neighbors[i].getState() == .occupied {
+                for i in 0..<neighbors.count {
+                    if neighbors[i].getState() == .occupied {
                         emptyArea = false
                         break
                     }
                 }
                 if emptyArea {
-                    __state = .occupied
-                    return (__state, true)  // change vac to occ
+                    state = .occupied
+                    return (state, true)  // change vac to occ
                     
                 }
             }
             // 2. If is occupied and four or more adjacent are occupied, becomes empty
-            if __state == .occupied {
+            if state == .occupied {
                 var cntOccupied = 0
-                for i in 0..<__neighbors.count {
-                    if __neighbors[i].getState() == .occupied {
+                for i in 0..<neighbors.count {
+                    if neighbors[i].getState() == .occupied {
                         cntOccupied += 1
                     }
                     if cntOccupied >= (complexRules ? 5 : 4) {
-                        __state = .vacant
-                        return (__state, true)  // change occ to vac
+                        state = .vacant
+                        return (state, true)  // change occ to vac
                     }
                 }
             }
             
-            return (__state, false) // no state change
+            return (state, false) // no state change
         }
         
         func update() {
-            __preFrameState = __state
+            preFrameState = state
         }
     }
     
