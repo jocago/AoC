@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F36EB8127565F4B00B1D0B4 /* 2021_01_Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F36EB8027565F4B00B1D0B4 /* 2021_01_Input.swift */; };
+		1F36EB8227565FB700B1D0B4 /* 2021_01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F36EB7F27565F0B00B1D0B4 /* 2021_01.swift */; };
 		1F3751B225676A1F00678142 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 1F3751B125676A1F00678142 /* Algorithms */; };
 		1F390FF625D83BF0004EDC70 /* 2015_01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F390FF525D83BF0004EDC70 /* 2015_01.swift */; };
 		1F390FFA25D83C01004EDC70 /* 2015_01_Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F390FF925D83C01004EDC70 /* 2015_01_Input.swift */; };
@@ -95,6 +97,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F36EB7F27565F0B00B1D0B4 /* 2021_01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2021_01.swift; sourceTree = "<group>"; };
+		1F36EB8027565F4B00B1D0B4 /* 2021_01_Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2021_01_Input.swift; sourceTree = "<group>"; };
 		1F390FF525D83BF0004EDC70 /* 2015_01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2015_01.swift; sourceTree = "<group>"; };
 		1F390FF925D83C01004EDC70 /* 2015_01_Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2015_01_Input.swift; sourceTree = "<group>"; };
 		1F390FFF25D842B2004EDC70 /* AoC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AoC-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -192,6 +196,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F36EB7D27565ECB00B1D0B4 /* 2021 */ = {
+			isa = PBXGroup;
+			children = (
+				1F36EB7E27565EDE00B1D0B4 /* Day 1 */,
+			);
+			path = 2021;
+			sourceTree = "<group>";
+		};
+		1F36EB7E27565EDE00B1D0B4 /* Day 1 */ = {
+			isa = PBXGroup;
+			children = (
+				1F36EB7F27565F0B00B1D0B4 /* 2021_01.swift */,
+				1F36EB8027565F4B00B1D0B4 /* 2021_01_Input.swift */,
+			);
+			path = "Day 1";
+			sourceTree = "<group>";
+		};
 		1F390FF025D83B6F004EDC70 /* 2015 */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,10 +425,11 @@
 		1FCA7AEB2560E3880075F836 /* Puzzles */ = {
 			isa = PBXGroup;
 			children = (
-				1F9E47E9257663C200042763 /* yyyy_dd_template.swift */,
 				1F390FF025D83B6F004EDC70 /* 2015 */,
 				1FCA7AFA2560E5ED0075F836 /* 2019 */,
 				1FCA7AFB2560E5F40075F836 /* 2020 */,
+				1F36EB7D27565ECB00B1D0B4 /* 2021 */,
+				1F9E47E9257663C200042763 /* yyyy_dd_template.swift */,
 			);
 			path = Puzzles;
 			sourceTree = "<group>";
@@ -751,6 +773,7 @@
 				1FFD343E259634C100039D3A /* 2020_25.swift in Sources */,
 				1FD3B882257DE3EB009FB034 /* 2020_07.swift in Sources */,
 				1F39100C25D84A99004EDC70 /* 2015_02_Input.swift in Sources */,
+				1F36EB8227565FB700B1D0B4 /* 2021_01.swift in Sources */,
 				1FE82654258175EE00AB9EF5 /* 2020_09_Input.swift in Sources */,
 				1F83F66B2579F9B300719389 /* 2020_04_Input.swift in Sources */,
 				1FFD34502596EDA500039D3A /* 2020_23.swift in Sources */,
@@ -762,6 +785,7 @@
 				1F8F3F25258DBF6A00C3D665 /* 2020_14.swift in Sources */,
 				1FFD342E259513D900039D3A /* Strings.swift in Sources */,
 				1F5FF2F42593E9FB002A4260 /* 2020_18_Input.swift in Sources */,
+				1F36EB8127565F4B00B1D0B4 /* 2021_01_Input.swift in Sources */,
 				1F390FFA25D83C01004EDC70 /* 2015_01_Input.swift in Sources */,
 				1FFD34352595A7E700039D3A /* 2020_19.swift in Sources */,
 				1FFACF0E2587CDB900DA52A0 /* Directions.swift in Sources */,
