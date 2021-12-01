@@ -1,39 +1,26 @@
 
 import Foundation
+import Algorithms
 
 struct p2021_1: Puzzle {
     //var data = testInput.parseToIntArray()
     var data = input_2021_01.parseToIntArray()
     var runPart = 2
     
-    func countUpDown(arr: [Int]) -> Int {
-        var up = 0
-        var down = 0
-        var prevs = -1
-        for val in arr {
-            if prevs >= 0 {
-                if val < prevs {
-                    down += 1
-                } else if val > prevs {
-                    up += 1
-                }
-            }
-            prevs = val
-        }
-        return up
+    func countUps(arr: Array<Int>) -> Int {
+        arr.adjacentPairs().count(where: {$1 > $0})
     }
     
+    
     func part1() -> Any {
-        return countUpDown(arr: data)
+        countUps(arr: data)
     }
 
     func part2() -> Any {
-        var grp: [Int] = []
-        
-        for i in 2..<data.count {
-            grp.append(data[i - 2] + data[i - 1] + data[i])
-        }
-        return countUpDown(arr: grp)
+        let grp = data
+                    .windows(ofCount: 3)
+                    .map {$0.sum()}
+        return countUps(arr: grp)
     }
 }
 
