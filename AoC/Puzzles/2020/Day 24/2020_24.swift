@@ -5,6 +5,8 @@
 //  Created by Joshua Gohlke on 1/7/21.
 //
 
+// Not Finished
+
 import Foundation
 
 struct p2020_24: Puzzle {
