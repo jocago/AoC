@@ -1,8 +1,9 @@
 
 import Foundation
 
-struct p2015_x: Puzzle {
+struct p2021_x: Puzzle {
     var data = testInput.parseToIntArray()
+    //var data = input_2021_d.parseToIntArray()
     var runPart = 0
 
     func part1() -> Any {
@@ -19,6 +20,6 @@ fileprivate let testInput = Data(raw: """
 
 """)
 
-let input_20yy_dd = Data(raw: """
+let input_2021_d = Data(raw: """
         
 """)
