@@ -22,10 +22,6 @@ struct p2021_3: Puzzle {
         return (zero, one)
     }
     
-    func bin2int(_ inp: String) -> Int {
-        Int(strtoul(inp, nil, 2))
-    }
-
     func part1() -> Any {
         var gamma: [Int] = []
         var epsilon: [Int] = []
