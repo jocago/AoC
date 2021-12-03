@@ -87,6 +87,8 @@
 		BCA0911C2757FBE60079C05A /* 2021_02_Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA0911B2757FBE60079C05A /* 2021_02_Input.swift */; };
 		BCA0911D2757FC9F0079C05A /* 2021_02.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA0911A2757FBC30079C05A /* 2021_02.swift */; };
 		BCB71742275ACBBB0011B86B /* Binary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB71741275ACBBB0011B86B /* Binary.swift */; };
+		BCB71746275ACE030011B86B /* 2021_04_Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB71745275ACE030011B86B /* 2021_04_Input.swift */; };
+		BCB71747275ACE0E0011B86B /* 2021_04.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB71744275ACDC40011B86B /* 2021_04.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -183,6 +185,8 @@
 		BCA0911A2757FBC30079C05A /* 2021_02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2021_02.swift; sourceTree = "<group>"; };
 		BCA0911B2757FBE60079C05A /* 2021_02_Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2021_02_Input.swift; sourceTree = "<group>"; };
 		BCB71741275ACBBB0011B86B /* Binary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Binary.swift; path = "AoC/Puzzles/2021/Day 3/Binary.swift"; sourceTree = SOURCE_ROOT; };
+		BCB71744275ACDC40011B86B /* 2021_04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2021_04.swift; sourceTree = "<group>"; };
+		BCB71745275ACE030011B86B /* 2021_04_Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2021_04_Input.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +216,7 @@
 				1F36EB7E27565EDE00B1D0B4 /* Day 1 */,
 				BCA091192757FB930079C05A /* Day 2 */,
 				BC70493D27590F550065A588 /* Day 3 */,
+				BCB71743275ACDB70011B86B /* Day 4 */,
 			);
 			path = 2021;
 			sourceTree = "<group>";
@@ -677,6 +682,15 @@
 			path = "Day 2";
 			sourceTree = "<group>";
 		};
+		BCB71743275ACDB70011B86B /* Day 4 */ = {
+			isa = PBXGroup;
+			children = (
+				BCB71744275ACDC40011B86B /* 2021_04.swift */,
+				BCB71745275ACE030011B86B /* 2021_04_Input.swift */,
+			);
+			path = "Day 4";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -792,6 +806,7 @@
 				1F76DC43256106AF00BE620C /* IntCode.swift in Sources */,
 				1FADE3C925A688610021BC3D /* 2020_21_Input.swift in Sources */,
 				1FE82650258175E000AB9EF5 /* 2020_09.swift in Sources */,
+				BCB71747275ACE0E0011B86B /* 2021_04.swift in Sources */,
 				1FFD344B2596926900039D3A /* 2020_22_Input.swift in Sources */,
 				1FFD34472596926000039D3A /* 2020_22.swift in Sources */,
 				1FAC24BC25925C250094B058 /* 2020_16.swift in Sources */,
@@ -838,6 +853,7 @@
 				1F76DC3B256101BE00BE620C /* 2010_02.swift in Sources */,
 				1F390FF625D83BF0004EDC70 /* 2015_01.swift in Sources */,
 				1FE8265925825C0200AB9EF5 /* 2020_10.swift in Sources */,
+				BCB71746275ACE030011B86B /* 2021_04_Input.swift in Sources */,
 				1FFD3442259634CB00039D3A /* 2020_25_Input.swift in Sources */,
 				1FADE3D225A6E7660021BC3D /* 2020_24_Input.swift in Sources */,
 				1F8F3F2B258DBF7300C3D665 /* 2020_14_Input.swift in Sources */,
