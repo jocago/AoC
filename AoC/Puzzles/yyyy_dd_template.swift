@@ -21,5 +21,5 @@ fileprivate let testInput = Data(raw: """
 """)
 
 let input_2021_d = Data(raw: """
-        
+
 """)
