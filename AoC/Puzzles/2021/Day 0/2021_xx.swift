@@ -2,8 +2,8 @@
 import Foundation
 
 struct p2021_x: Puzzle {
-    var data = testInput.parseToIntArray()
-    //var data = input_2021_d.parseToIntArray()
+    var data = testInput.parseToStringArray()
+    //var data = input_2021_x.parseToStringArray()
     var runPart = 0
 
     func part1() -> Any {
@@ -16,10 +16,12 @@ struct p2021_x: Puzzle {
 }
 
 
+/*
+ Pt 1 test target: ?
+ pt 2 test target: ?
+ */
 fileprivate let testInput = Data(raw: """
 
 """)
 
-let input_2021_d = Data(raw: """
 
-""")
