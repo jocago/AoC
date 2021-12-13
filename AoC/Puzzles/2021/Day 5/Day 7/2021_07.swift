@@ -39,6 +39,7 @@ struct p2021_7: Puzzle {
 }
 
 
+
 /*
  Pt 1 test target: 37
  pt 2 test target: 168
