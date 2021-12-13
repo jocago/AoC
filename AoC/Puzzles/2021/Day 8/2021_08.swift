@@ -8,10 +8,6 @@ struct p2021_8: Puzzle {
     var data = input_2021_8.parseToStringArray()
     var runPart = 2
     
-    enum Space {
-        case top, leftTop, rightTop, middle, leftBotom, rightBottm, bottom
-    }
-    
     struct Line {
         let samples: [String]
         let outputValues: [String]
