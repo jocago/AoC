@@ -35,25 +35,25 @@ struct p2020_17: Puzzle {
 
         
     func bootUp(dimensions: Int) -> Int {
-            var matrix = parseData()
+            var theMatrix = parseData()
             
             for _ in 1...6 {  // Boot Cycle
-                biggifyTheMatrix(matrix: &matrix, dimensions: dimensions)
-                let matrixTmp = matrix
+                biggifyTheMatrix(matrix: &theMatrix, dimensions: dimensions)
+                let matrixTmp = theMatrix
                 for (point, state) in matrixTmp {
                     let activeNeighbors = countNeighbors(point: point,
                                                                matrix: matrixTmp,
                                                                dimensions: dimensions)
                     
                     if state == .active && !(2...3).contains(activeNeighbors) {
-                        matrix[point] = .inactive
+                        theMatrix[point] = .inactive
                     } else if activeNeighbors == 3 {
-                        matrix[point] = .active
+                        theMatrix[point] = .active
                     }
                 }
             }
             
-            let active = matrix.filter {
+            let active = theMatrix.filter {
                 $0.value == .active
             }
             

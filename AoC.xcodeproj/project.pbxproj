@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1F36EB8127565F4B00B1D0B4 /* 2021_01_Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F36EB8027565F4B00B1D0B4 /* 2021_01_Input.swift */; };
 		1F36EB8227565FB700B1D0B4 /* 2021_01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F36EB7F27565F0B00B1D0B4 /* 2021_01.swift */; };
-		1F3751B225676A1F00678142 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 1F3751B125676A1F00678142 /* Algorithms */; };
 		1F390FF625D83BF0004EDC70 /* 2015_01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F390FF525D83BF0004EDC70 /* 2015_01.swift */; };
 		1F390FFA25D83C01004EDC70 /* 2015_01_Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F390FF925D83C01004EDC70 /* 2015_01_Input.swift */; };
 		1F39100825D84A90004EDC70 /* 2015_02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F39100725D84A90004EDC70 /* 2015_02.swift */; };
@@ -83,6 +82,8 @@
 		1FFD34592599249C00039D3A /* 2020_20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD34582599249B00039D3A /* 2020_20.swift */; };
 		1FFD345D259924A500039D3A /* 2020_20_Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD345C259924A500039D3A /* 2020_20_Input.swift */; };
 		BC1EE2B5275DC44300954595 /* 2021_05_Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1EE2B4275DC44300954595 /* 2021_05_Input.swift */; };
+		BC4D930B276BF9D2001FCECE /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = BC4D930A276BF9D2001FCECE /* Algorithms */; };
+		BC4D930D276C0581001FCECE /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D930C276C0581001FCECE /* Matrix.swift */; };
 		BC70493F27590F880065A588 /* 2021_03.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70493E27590F680065A588 /* 2021_03.swift */; };
 		BC70494127590F9F0065A588 /* 2021_03_Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70494027590F9F0065A588 /* 2021_03_Input.swift */; };
 		BCA0911C2757FBE60079C05A /* 2021_02_Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA0911B2757FBE60079C05A /* 2021_02_Input.swift */; };
@@ -192,6 +193,7 @@
 		1FFD34582599249B00039D3A /* 2020_20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2020_20.swift; sourceTree = "<group>"; };
 		1FFD345C259924A500039D3A /* 2020_20_Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2020_20_Input.swift; sourceTree = "<group>"; };
 		BC1EE2B4275DC44300954595 /* 2021_05_Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2021_05_Input.swift; sourceTree = "<group>"; };
+		BC4D930C276C0581001FCECE /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		BC70493E27590F680065A588 /* 2021_03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2021_03.swift; sourceTree = "<group>"; };
 		BC70494027590F9F0065A588 /* 2021_03_Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2021_03_Input.swift; sourceTree = "<group>"; };
 		BCA0911A2757FBC30079C05A /* 2021_02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2021_02.swift; sourceTree = "<group>"; };
@@ -223,7 +225,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F3751B225676A1F00678142 /* Algorithms in Frameworks */,
+				BC4D930B276BF9D2001FCECE /* Algorithms in Frameworks */,
 				1FB06314256B4DFF004B2526 /* SwifterSwift in Frameworks */,
 				1FB0631B256B5E87004B2526 /* SwiftGraph in Frameworks */,
 			);
@@ -512,6 +514,7 @@
 			isa = PBXGroup;
 			children = (
 				1FF8DB3F2565F74F00783A7E /* Tree.swift */,
+				BC4D930C276C0581001FCECE /* Matrix.swift */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
@@ -806,9 +809,9 @@
 			);
 			name = AoC;
 			packageProductDependencies = (
-				1F3751B125676A1F00678142 /* Algorithms */,
 				1FB06313256B4DFF004B2526 /* SwifterSwift */,
 				1FB0631A256B5E87004B2526 /* SwiftGraph */,
+				BC4D930A276BF9D2001FCECE /* Algorithms */,
 			);
 			productName = AoC;
 			productReference = 1FCA7AE02560E2E80075F836 /* AoC */;
@@ -842,9 +845,9 @@
 			);
 			mainGroup = 1FCA7AD72560E2E80075F836;
 			packageReferences = (
-				1F3751B025676A1F00678142 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 				1FB06312256B4DFF004B2526 /* XCRemoteSwiftPackageReference "SwifterSwift" */,
 				1FB06319256B5E87004B2526 /* XCRemoteSwiftPackageReference "SwiftGraph" */,
+				BC4D9309276BF9D2001FCECE /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 			);
 			productRefGroup = 1FCA7AE12560E2E80075F836 /* Products */;
 			projectDirPath = "";
@@ -920,6 +923,7 @@
 				1F8F3F25258DBF6A00C3D665 /* 2020_14.swift in Sources */,
 				1FFD342E259513D900039D3A /* Strings.swift in Sources */,
 				1F5FF2F42593E9FB002A4260 /* 2020_18_Input.swift in Sources */,
+				BC4D930D276C0581001FCECE /* Matrix.swift in Sources */,
 				1F36EB8127565F4B00B1D0B4 /* 2021_01_Input.swift in Sources */,
 				1F390FFA25D83C01004EDC70 /* 2015_01_Input.swift in Sources */,
 				1FFD34352595A7E700039D3A /* 2020_19.swift in Sources */,
@@ -1197,14 +1201,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1F3751B025676A1F00678142 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-algorithms.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.2;
-			};
-		};
 		1FB06312256B4DFF004B2526 /* XCRemoteSwiftPackageReference "SwifterSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwifterSwift/SwifterSwift";
@@ -1221,14 +1217,17 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		BC4D9309276BF9D2001FCECE /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1F3751B125676A1F00678142 /* Algorithms */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1F3751B025676A1F00678142 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
-			productName = Algorithms;
-		};
 		1FB06313256B4DFF004B2526 /* SwifterSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1FB06312256B4DFF004B2526 /* XCRemoteSwiftPackageReference "SwifterSwift" */;
@@ -1238,6 +1237,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1FB06319256B5E87004B2526 /* XCRemoteSwiftPackageReference "SwiftGraph" */;
 			productName = SwiftGraph;
+		};
+		BC4D930A276BF9D2001FCECE /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC4D9309276BF9D2001FCECE /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
