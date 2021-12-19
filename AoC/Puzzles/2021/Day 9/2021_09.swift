@@ -11,7 +11,8 @@ struct p2021_9: Puzzle {
         var lows:[Point] = []
         for i in 0..<matrix.width {
             for j in 0..<matrix.hight {
-                if matrix.getVal(at: (x:i,y:j)) < matrix.getCardinalAdjacent(to: (x:i,y:j)).values.min()! {
+                if matrix.getVal(at: (x:i,y:j)) < matrix.getAdjacent(to: (x:i,y:j),
+                                                                     includeDiag: false).values.min()! {
                     lows.append(Point(x: i, y: j))
                 }
             }
