@@ -16,7 +16,7 @@ struct p2021_11: Puzzle {
         var queue:[Point] = []
         var flashedTracker:[Point] = []
         for x in 0..<matrix.width {
-            for y in 0..<matrix.hight {
+            for y in 0..<matrix.height {
                 queue.append(Point(x: x, y: y))
             }
         }

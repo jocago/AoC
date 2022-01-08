@@ -15,6 +15,7 @@ extension Input {
     func parseToIntArray(splitBy: Character = "\n") -> [Int] {
         return raw.split(separator: splitBy).map { Int($0)! }
     }
+    
     func parseToStringArray(splitBy: Character = "\n") -> [String] {
         return raw.split(separator: splitBy).map { String($0) }
     }
@@ -75,6 +76,23 @@ extension Input {
     
     func parseToSimpleCharArray() -> [Character] {
         return raw.charactersArray
+    }
+    
+    func parseToXYChar() -> Array<Array<Character>> {
+        return raw
+            .split(separator: "\n")
+            .map { String($0) }
+            .map { $0.charactersArray }
+        
+    }
+    
+    func parseToXYInt() -> Array<Array<Int>> {
+        return raw
+            .split(separator: "\n")
+            .map { String($0) }
+            .map { $0.charactersArray.map { Int(String($0))! } }
+            
+        
     }
 }
 

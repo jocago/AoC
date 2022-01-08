@@ -10,7 +10,7 @@ struct p2021_9: Puzzle {
         var matrix = matrix
         var lows:[Point] = []
         for i in 0..<matrix.width {
-            for j in 0..<matrix.hight {
+            for j in 0..<matrix.height {
                 if matrix.getVal(at: (x:i,y:j)) < matrix.getAdjacent(to: (x:i,y:j),
                                                                      includeDiag: false).values.min()! {
                     lows.append(Point(x: i, y: j))
