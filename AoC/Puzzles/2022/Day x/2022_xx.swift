@@ -1,7 +1,7 @@
 
 import Foundation
 
-struct p2021_x: Puzzle {
+struct p2022_x: Puzzle {
     var data = testInput.parseToStringArray()
     //var data = input_2021_x.parseToStringArray()
     var runPart = 0

@@ -9,20 +9,36 @@ import Foundation
 
 
 protocol CoordinatePoint: Hashable, CustomStringConvertible {
-    var coords: [Int] { get }
+    var coords: [Int] { get set }
     var dimensions: Int { get }
 }
 
 extension CoordinatePoint {
-    var x: Int { return coords[0] }
-    var y: Int { return coords[1] }
+    var x: Int {
+        get { return coords[0] }
+        set { coords[0] = newValue }
+    }
+    var y: Int {
+        get { return coords[1] }
+        set { coords[1] = newValue }
+    }
     var z: Int? {
-        if coords.count > 2 { return coords[2] }
-        else { return nil }
+        get {
+            if coords.count > 2 { return coords[2] }
+            else { return nil }
+        }
+        set {
+            if coords.count > 2 { coords[2] = newValue ?? 0 }
+        }
     }
     var t: Int? {
-        if coords.count > 3 { return coords[3] }
-        else { return nil }
+        get {
+            if coords.count > 3 { return coords[3] }
+            else { return nil }
+        }
+        set {
+            if coords.count > 3 { coords[3] = newValue ?? 0 }
+        }
     }
     var description: String {
         return "(" + coords.map { $0.description }.joined(separator: ", ") + ")"

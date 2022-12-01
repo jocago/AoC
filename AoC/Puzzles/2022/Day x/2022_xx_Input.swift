@@ -5,6 +5,6 @@
 //  Created by Joshua Gohlke on 12/5/21.
 //
 
-let input_2021_x = Data(raw: """
+let input_2022_x = Data(raw: """
 
 """)
