@@ -74,6 +74,10 @@ extension Input {
         return raw.components(separatedBy: "\n\n").map { String($0) }.map { $0.components(separatedBy: "\n") }
     }
     
+    func parseToBlockOfIntsArray() -> [[Int]] {
+        return raw.components(separatedBy: "\n\n").map { String($0) }.map { $0.components(separatedBy: "\n").map { Int($0)! } }
+    }
+    
     func parseToSimpleCharArray() -> [Character] {
         return raw.charactersArray
     }

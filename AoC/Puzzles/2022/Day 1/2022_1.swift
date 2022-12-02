@@ -2,17 +2,15 @@
 import Foundation
 
 struct p2022_1: Puzzle {
-    //var data = testInput.parseToBlockOfStringsArray()
-    var data = input_2022_1.parseToBlockOfStringsArray()
+    //var data = testInput.parseToBlockOfIntsArray()
+    var data = input_2022_1.parseToBlockOfIntsArray()
     var runPart = 2
     
     func get_packs() -> [Int] {
         var packs: [Int] = []
         for l in data {
             var x = 0
-            for e in l {
-                x +=  Int(e)!
-            }
+            for e in l { x += e }
             packs.append(x)
         }
         return packs
