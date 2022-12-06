@@ -11,6 +11,6 @@ print("jocago's AoC Project\n\n")
 
 
 
-var today = p2022_5()
+var today = p2022_6()
 today.run()
 
