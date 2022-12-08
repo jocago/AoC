@@ -3,4 +3,70 @@
    uuid = "E5E7DEDF-3D9F-487A-A60E-32EF0AF578B6"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4ED493E0-864A-4BB8-9C59-CE26951C1FFC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AoC/Puzzles/2022/Day 8/2022_08.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "part1()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "97A566EC-24DB-409C-9A39-E953B5D3C808"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AoC/Puzzles/2022/Day 8/2022_08.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "part1()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "97A566EC-24DB-409C-9A39-E953B5D3C808 - 931a12a926c745a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AoC.p2022_8.part1() -&gt; Any"
+                  moduleName = "AoC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jocago/Documents/Programming/Swift/AoC/AoC/Puzzles/2022/Day%208/2022_08.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "1380">
+               </Location>
+               <Location
+                  uuid = "97A566EC-24DB-409C-9A39-E953B5D3C808 - a81d32485a1bbf27"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Int, (x: Swift.Int, y: Swift.Int, n: Swift.Int, e: Swift.Int, s: Swift.Int, w: Swift.Int, t: Swift.Int)) -&gt; Swift.Int in AoC.p2022_8.part1() -&gt; Any"
+                  moduleName = "AoC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jocago/Documents/Programming/Swift/AoC/AoC/Puzzles/2022/Day%208/2022_08.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

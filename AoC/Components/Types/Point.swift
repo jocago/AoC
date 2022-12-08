@@ -76,6 +76,11 @@ extension CoordinatePoint {
     }
 }
 
+extension CoordinatePoint {
+    mutating func moveInXAxis(by dist: Int) { self.x += dist }
+    mutating func moveInYAxis(by dist: Int) { self.y += dist }
+}
+
 struct Point: CoordinatePoint {
     var coords: [Int] = []
     var dimensions = 0
