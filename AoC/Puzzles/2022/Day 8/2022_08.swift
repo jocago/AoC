@@ -40,9 +40,9 @@ struct p2022_8: Puzzle {
         }
         if scoreScheme == .tree { return score }
         else if scoreScheme == .edge {
-            if tTree.x < 0 || tTree.x >= data[0].count { return 0 }
-            else if tTree.y < 0 || tTree.y >= data.count { return 0 }
-            return 1
+            if tTree.x < 0 || tTree.x >= data[0].count { return 1 }
+            else if tTree.y < 0 || tTree.y >= data.count { return 1 }
+            return 0
         }
         else { return -1 }
     }
@@ -58,7 +58,7 @@ struct p2022_8: Puzzle {
                 let e = self.getDirectionScore(cTree: cPoint, dir: .right, scoreScheme: .edge)
                 let s = self.getDirectionScore(cTree: cPoint, dir: .down, scoreScheme: .edge)
                 let w = self.getDirectionScore(cTree: cPoint, dir: .left, scoreScheme: .edge)
-                let t = min(n,e,s,w) == 0 ? 1 : 0
+                let t = max(n,e,s,w)
                 trees.append((x: x, y: y, n: n, e: e, s: s, w: w, t: t))
             }
         }
