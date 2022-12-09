@@ -8,7 +8,7 @@
 import Foundation
 
 
-protocol CoordinatePoint: Hashable, CustomStringConvertible {
+protocol CoordinatePoint: Hashable, CustomStringConvertible, Equatable {
     var coords: [Int] { get set }
     var dimensions: Int { get }
 }
@@ -73,6 +73,20 @@ extension CoordinatePoint {
         default:
             fatalError("No appropriate response case was found for \(response.count).")
         }
+    }
+    
+    static func ==(lhs: Self, rhs: Point) -> Bool {
+        switch rhs.dimensions {
+        case 2:
+            return lhs.x == rhs.x && lhs.y == rhs.y
+        case 3:
+            return lhs.x == rhs.x && lhs.y == rhs.y && lhs.z! == rhs.z!
+        case 4:
+            return lhs.x == rhs.x && lhs.y == rhs.y && lhs.z! == rhs.z! && lhs.t! == rhs.t!
+        default:
+            fatalError("No appropriate comparison found.")
+        }
+        
     }
 }
 
