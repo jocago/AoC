@@ -95,6 +95,8 @@
 		BC1FCF192943127300386380 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1FCF182943127300386380 /* Counter.swift */; };
 		BC1FCF1D2943B43C00386380 /* 2022_10_Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1FCF1B2943B43C00386380 /* 2022_10_Input.swift */; };
 		BC1FCF1E2943B43C00386380 /* 2022_10.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1FCF1C2943B43C00386380 /* 2022_10.swift */; };
+		BC1FCF2229459C8C00386380 /* 2022_11_Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1FCF2029459C8C00386380 /* 2022_11_Input.swift */; };
+		BC1FCF2329459C8C00386380 /* 2022_11.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1FCF2129459C8C00386380 /* 2022_11.swift */; };
 		BC228112277B9470003F56E2 /* Collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC228111277B9470003F56E2 /* Collections.swift */; };
 		BC228115277BC9B7003F56E2 /* Binary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC228114277BC9B7003F56E2 /* Binary.swift */; };
 		BC228116277BCE16003F56E2 /* Binary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC228114277BC9B7003F56E2 /* Binary.swift */; };
@@ -263,6 +265,8 @@
 		BC1FCF182943127300386380 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		BC1FCF1B2943B43C00386380 /* 2022_10_Input.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 2022_10_Input.swift; sourceTree = "<group>"; };
 		BC1FCF1C2943B43C00386380 /* 2022_10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 2022_10.swift; sourceTree = "<group>"; };
+		BC1FCF2029459C8C00386380 /* 2022_11_Input.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 2022_11_Input.swift; sourceTree = "<group>"; };
+		BC1FCF2129459C8C00386380 /* 2022_11.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 2022_11.swift; sourceTree = "<group>"; };
 		BC228111277B9470003F56E2 /* Collections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collections.swift; sourceTree = "<group>"; };
 		BC228114277BC9B7003F56E2 /* Binary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binary.swift; sourceTree = "<group>"; };
 		BC228118277D2804003F56E2 /* 2021_15.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 2021_15.swift; sourceTree = "<group>"; };
@@ -864,6 +868,15 @@
 			path = "Day 10";
 			sourceTree = "<group>";
 		};
+		BC1FCF1F29459C8C00386380 /* Day 11 */ = {
+			isa = PBXGroup;
+			children = (
+				BC1FCF2029459C8C00386380 /* 2022_11_Input.swift */,
+				BC1FCF2129459C8C00386380 /* 2022_11.swift */,
+			);
+			path = "Day 11";
+			sourceTree = "<group>";
+		};
 		BC228113277BC9B7003F56E2 /* Functions */ = {
 			isa = PBXGroup;
 			children = (
@@ -968,6 +981,7 @@
 				BC0FC9822941A3F0004156B8 /* Day 8 */,
 				BC0FC9872942D736004156B8 /* Day 9 */,
 				BC1FCF1A2943B43C00386380 /* Day 10 */,
+				BC1FCF1F29459C8C00386380 /* Day 11 */,
 				BC9C22F9293C62510068FEDC /* Day x */,
 			);
 			path = 2022;
@@ -1230,6 +1244,7 @@
 				BCA220D1278B46F800660A1E /* 2021_18.swift in Sources */,
 				1F39101525D8836B004EDC70 /* 2015_03_Input.swift in Sources */,
 				1F76DC43256106AF00BE620C /* IntCode.swift in Sources */,
+				BC1FCF2229459C8C00386380 /* 2022_11_Input.swift in Sources */,
 				1FADE3C925A688610021BC3D /* 2020_21_Input.swift in Sources */,
 				1FE82650258175E000AB9EF5 /* 2020_09.swift in Sources */,
 				BC4A8DED2782527900DCFA3B /* DijkstraGraph.swift in Sources */,
@@ -1348,6 +1363,7 @@
 				BCCA1D7D276FD5950008778A /* 2021_12.swift in Sources */,
 				BCA0911C2757FBE60079C05A /* 2021_02_Input.swift in Sources */,
 				1F8F3F3025919AD700C3D665 /* 2020_15.swift in Sources */,
+				BC1FCF2329459C8C00386380 /* 2022_11.swift in Sources */,
 				BC0FC9852941A3F0004156B8 /* 2022_08_Input.swift in Sources */,
 				1FADE3CE25A6E7530021BC3D /* 2020_24.swift in Sources */,
 				1F9F8E252586950300B93EC8 /* 2020_12.swift in Sources */,

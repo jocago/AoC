@@ -33,3 +33,21 @@ struct PointCounter {
         return items.reduce(0) { $0 + $1.value }
     }
 }
+
+struct IntCounter {
+    var items: [Int : Int] = [:]
+    lazy var count: Int = items.count
+    
+    mutating func count(item: Int) {
+        if items.has(key: item) { items[item]! += 1 }
+        else { items[item] = 1 }
+    }
+    
+    func getCount(for item: Int) -> Int {
+        return items[item, default: 0]
+    }
+    
+    func getAllCounts() -> Int {
+        return items.reduce(0) { $0 + $1.value }
+    }
+}
