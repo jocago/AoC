@@ -38,22 +38,22 @@ class DijkstraGraph {
         height = data.count
         
         for y in 0..<height {
-            for x in 0..<height {
-                let weight = data[Int(y % height)][Int(x % height)]
+            for x in 0..<width {
+                let weight = data[Int(y % height)][Int(x % width)]
                 let newNode = DijkstraNode(id: Point(x:x, y:y), weight: Int(weight), edges: [])
                 self.nodes.append(newNode)
             }
         }
 
         for y in 0..<height {
-            for x in 0..<height {
+            for x in 0..<width {
                 let node = self.getNode(Point(x: x, y: y))
 
                 if y - 1 > 0 { // up
                     node.edges.append(Point(x: x, y: y-1))
                 }
                 
-                if x + 1 < height { // right
+                if x + 1 < width { // right
                     node.edges.append(Point(x: x+1, y: y))
                 }
                 
@@ -99,89 +99,3 @@ class DijkstraGraph {
     }
     
 }
-
-//class DijkstraGraph {
-//    var grid:[[Int]]
-//    var nodes: [DijkstraNode] = []
-//    var xMax: Int
-//    var yMax: Int
-//
-//    init(_ grid: [[Int]], multiplyer: Int = 1) {
-//        self.grid = grid
-//        xMax = grid[0].count * multiplyer
-//        yMax = grid.count * multiplyer
-//
-//         // Create nodes
-//        for y in 0..<yMax {
-//            for x in 0..<yMax {
-//                var weight = grid[Int(y%yMax)][Int(x%yMax)]
-//                let weightFactor = Int((x/yMax) + (y/yMax))
-//                weight += weightFactor
-//                if weight > 9 {
-//                    weight -= 9
-//                }
-//                let newNode = DijkstraNode(id: Point(x:x, y:y), weight: Int(weight), edges: [])
-//                self.nodes.append(newNode)
-//            }
-//        }
-//
-//        // Add edges - just storing the coordinates. We can get the node
-//        // from these, with the weight.
-//        for y in 0..<yMax {
-//            for x in 0..<yMax {
-//                let node = self.getNode(x: x, y: y)
-//
-//                if x + 1 < yMax {
-//                    node.edges.append(Point(x: x+1, y: y))
-//                }
-//                if y + 1 < yMax {
-//                    node.edges.append(Point(x: x, y: y+1))
-//                }
-//                if x - 1 > 0 {
-//                    node.edges.append(Point(x: x-1, y: y))
-//                }
-//                if y - 1 > 0 {
-//                    node.edges.append(Point(x: x, y: y-1))
-//                }
-//            }
-//        }
-//        //return graph
-//    }
-//
-//    func getNode(x: Int, y: Int) -> DijkstraNode {
-//        return nodes[y*xMax + x]
-//    }
-//
-//    func getNode(point: Point) -> DijkstraNode {
-//        return nodes[point.y*xMax + point.x]
-//    }
-//
-//// Dijkstra path finding algo
-//    func getShortestPathWeight(from source: Point, to dest: Point) -> Int {
-//        var curNode = self.getNode(point: source)
-//        curNode.distance = 0
-//
-//        var toVisit = [DijkstraNode]()
-//        toVisit.append(curNode)
-//        while (!toVisit.isEmpty) {
-//            toVisit = toVisit.filter{ $0.id != curNode.id }
-//            for edge in curNode.edges {
-//                let toNode = self.getNode(point: edge)
-//                let dist = curNode.distance + toNode.weight
-//                if (dist < toNode.distance) {
-//                    toNode.distance = dist
-//                    toVisit.append(toNode)
-//                }
-//            }
-//            if !toVisit.isEmpty {
-//                curNode = toVisit.min {$0.distance < $1.distance}!
-//            }
-//            // break out if we've reached the end point
-//            if (curNode.id == dest) {
-//                return Int(curNode.distance)
-//            }
-//        }
-//        return -1
-//    }
-//
-//}

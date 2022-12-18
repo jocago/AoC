@@ -5,40 +5,40 @@
 //  Created by Joshua Gohlke on 12/14/20.
 //
 
-public enum CardinalDirection {
+public enum CardinalDirection: CaseIterable {
     case north
     case south
     case east
     case west
 }
 
-public enum RelativeDirection {
+public enum RelativeDirection: CaseIterable {
     case forward
     case back
     case left
     case right
 }
 
-public enum Heading {
+public enum Heading: CaseIterable {
     case up
     case down
     case left
     case right
 }
 
-public enum UltimateHeading {
+public enum UltimateHeading: CaseIterable {
     case top
     case bottom
     case left
     case right
 }
 
-public enum Axis2 {
+public enum Axis2: CaseIterable {
     case x
     case y
 }
 
-public enum Axis3 {
+public enum Axis3: CaseIterable {
     case x
     case y
     case z

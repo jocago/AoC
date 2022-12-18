@@ -40,3 +40,4 @@ public extension Collection where Element: Hashable {
         return counter.first(where: {$0.value == counter.values.min()!})!.key
     }
 }
+

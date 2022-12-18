@@ -6,7 +6,9 @@
 //
 
 struct Matrix<T> {
-    private var raw:[[T]]
+    /// ok, I need to break this into 2D, 3D, and 4D versions.
+    /// It's just brokens.
+    private var raw: [[T]]
     lazy var width = raw.count
     lazy var height = raw[0].count
     var data: [[T]] {
@@ -15,12 +17,14 @@ struct Matrix<T> {
         }
     }
     
+    enum RotateDirection { case left, right }
+    typealias xy = (x:Int,y:Int)
+    
     init(_ inp: [[T]]) {
         raw = inp
     }
-    
 
-    mutating func getAdjacent(to loc: (x:Int,y:Int), includeDiag:Bool) -> [String:T] {
+    mutating func getAdjacent(to loc: xy, includeDiag:Bool) -> [String:T] {
         guard loc.x >= 0 && loc.x <= width else { fatalError("X is out of range") }
         guard loc.y >= 0 && loc.y <= height else { fatalError("Y is out of range") }
         var adj:[String:T] = [:]
@@ -41,7 +45,7 @@ struct Matrix<T> {
         getAdjacent(to: (x:loc.x,y:loc.y), includeDiag:includeDiag)
     }
     
-    mutating func getAdjacentPoints(to loc: (x:Int,y:Int), includeDiag:Bool) -> [String:Point] {
+    mutating func getAdjacentPoints(to loc: xy, includeDiag:Bool) -> [String:Point] {
         guard loc.x >= 0 && loc.x <= width else { fatalError("X is out of range") }
         guard loc.y >= 0 && loc.y <= height else { fatalError("Y is out of range") }
         var adj:[String:Point] = [:]
@@ -150,5 +154,47 @@ struct Matrix<T> {
         return Matrix(newData)
     }
     
+    mutating func rotate(to dir: RotateDirection, times num: Int = 1) {
+        for _ in 0..<num {
+            if dir == .right { self.rotateRight() }
+            else { self.rotateLeft() }
+        }
+    }
+    
+    private mutating func rotateRight() {
+        self.raw = self.rotateRight(ins: self.raw)
+    }
+    
+    private mutating func rotateRight(ins: [[T]]) -> [[T]] {
+        var newMatrix: [[T]] = []
+        for i in 0..<ins.count {
+            var newRow: [T] = []
+            for j in (0..<ins[0].count).reversed() {
+                newRow.append(ins[i][j])
+            }
+            newMatrix.append(newRow)
+        }
+        return newMatrix
+    }
+    
+    private mutating func rotateLeft() {
+        self.raw = self.rotateLeft(ins: self.raw)
+    }
+    
+    private mutating func rotateLeft(ins: [[T]]) -> [[T]] {
+        
+        //rotate
+        return ins
+    }
+    
+    mutating func getEachCoord() -> [xy] {
+        var duck: [xy] = []
+        for x in 0..<width {
+            for y in 0..<height {
+                duck.append((x:x,y:y))
+            }
+        }
+        return duck
+    }
 }
 
